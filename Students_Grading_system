@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Student{
+ public static void main(String[] args) {
+  Scanner scan=new Scanner(System.in);
+  int [] mark=new int[6];
+  System.out.println("Enter 6 subjects mark.........:");
+  int total=0;
+  float avg;
+  for(int i=0;i<6;i++)
+  {
+    mark[i]=scan.nextInt();
+    total+=mark[i];
+  }
+  avg=total/6;
+     System.out.println("Mark details.....");
+     System.out.println(".........................");
+     System.out.println(" Total mark...."+total);
+     System.out.println(" Average mark...."+avg);
+     
+  if(avg>90&&avg<=100)
+   {
+     System.out.println(" Grade... : A");
+   }
+   else if(avg>80&&avg<=90)
+   {
+    System.out.println(" Grade... : B");
+   }
+   else if(avg>70&&avg<=80)
+   {
+    System.out.println(" Grade.... : C");
+   }
+   else if(avg>60&&avg<=70)
+   { 
+       System.out.println(" Grade... : D");
+   }
+   else if(avg>50&&avg<=60)
+    {
+     System.out.println(" Grade... : E");
+    }
+    else
+    {
+     System.out.println(" Grade... : F");
+    }
+ }
+}
